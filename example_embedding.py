@@ -1,7 +1,8 @@
 from langchain_ollama import OllamaEmbeddings
+import os
 
 embeddings = OllamaEmbeddings(
-    model="nomic-embed-text",
+    model=os.getenv("EMBEDDING_MODEL"),
 )
 
 text_to_embed = "LangChain is a framework for developing applications powered by large language models (LLMs)."

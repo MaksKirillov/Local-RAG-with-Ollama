@@ -77,4 +77,4 @@ texts = text_splitter.create_documents([entire_text])
 
 print(f"Total chunks: {len(texts)}")
 
-print(f"First chunk: {texts[0].page_content}")
+print(f"First chunk: {texts[2].page_content}")
